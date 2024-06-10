@@ -15,4 +15,5 @@ Visit eldavido7.github.io/react-movie-app/
     ```shell
     $ npm run dev
     ```
-4. Open [http://localhost:5173/](http://localhost:5173) to view it in your browser..
+4. Open [http://localhost:5173/](http://localhost:5173) to view it in your browser.
+5. Search for a movie/TV series by searching on the homepage, or click movies or tv shows on the menu header to filter by genre.
