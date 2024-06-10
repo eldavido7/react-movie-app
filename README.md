@@ -1,9 +1,9 @@
+### Getting Started with clone the above repository using `git clone {repository url}` ...
+This project was bootstrapped with [Create React-vite App](https://vitejs.dev/guide/).
+
 ### Visit eldavido7.github.io/react-movie-app/
 
 ### Or
-
-### Getting Started with clone the above repository using `git clone {repository url}` ...
-This project was bootstrapped with [Create React-vite App](https://vitejs.dev/guide/).
 
 ### In the project directory, run `npm install` to install node_modules.
 ### Then run `npm run dev` to run project on browser.
