@@ -58,7 +58,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/react-movie-app">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
