@@ -65,4 +65,13 @@
             }
         }
     }
+    .footerImage {
+    display: flex;
+    justify-content: center;
+
+    img {
+      max-width: 100px; // Adjust the width as necessary
+      height: auto; // Maintain aspect ratio
+    }
+  }
 }
