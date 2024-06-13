@@ -21,7 +21,6 @@ const Header = () => {
   }, [location]);
 
   const controlNavbar = () => {
-    // console.log(window.scrollY)
     if (window.scrollY > 200) {
       if (window.scrollY > lastScrollY && !mobileMenu) {
         setShow("hide");
@@ -107,7 +106,7 @@ const Header = () => {
             <div className="searchInput">
               <input
                 type="text"
-                placeholder="Search movie or tv shows..."
+                placeholder="Search movies or tv shows..."
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyUp={searchQueryHandler}
               />

@@ -9,16 +9,11 @@ const Upcoming = () => {
 
   const { data, loading } = useFetch(`/${endpoint}/upcoming`);
 
-  // const onTabChange = (tab) => {
-  //     setEndpoint(tab === "Movies" ? "movie" : "tv")
-
-  // };
   return (
     <div className="carouselSection">
       <ContentWrapper className="contentWrapper">
         <span className="carouselTitle">Upcoming Movies</span>
               <SwitchTab data={["Movies"]}
-                //   onTabChange={onTabChange}
               />
       </ContentWrapper>
       <Carousel data={data?.results} loading={loading} endpoint={endpoint} />

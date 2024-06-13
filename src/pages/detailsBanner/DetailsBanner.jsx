@@ -22,7 +22,6 @@ const DetailsBanner = ({ video, crew }) => {
     const _genres = data?.genres?.map((i) => i.id);
     const director = crew?.filter((f) => f.job === "Director");
     const writer = crew?.filter((f) => f.job === "Screenplay" || f.job==="Story" || f.job==="Writer");
-// console.log(director,writer)
 
     const toHoursAndMinutes = (totalMinutes) => {
         const hours = Math.floor(totalMinutes / 60);
@@ -135,22 +134,22 @@ const DetailsBanner = ({ video, crew }) => {
                                         )}
 
                                         {data?.created_by?.length > 0 && (
-                                            <div className="info">
-                                                <span className="text bold">
-                                                    Creator:{" "}
-                                                </span>
-                                                <span className="text">
-                                                    {data?.created_by.map((a, i) => (
-                                                        <span key={i}>
-                                                            {a.name}
-                                                            {data?.created_by.length - 1 !== i && ", "}
-                                                        </span>
-                                                    ))}
-                                                </span>
-                                            </div>
-                                        )}
+                                                <div className="info">
+                                                    <span className="text bold">
+                                                        Creator:{" "}
+                                                    </span>
+                                                    <span className="text">
+                                                        {data?.created_by.map((a, i) => (
+                                                            <span key={i}>
+                                                                {a.name}
+                                                                {data?.created_by.length - 1 !== i && ", "}
+                                                            </span>
+                                                        ))}
+                                                    </span>
+                                                </div>
+                                            )}
+                                        </div>
                                     </div>
-                                </div>
                                 <VideoPopup
                                     show={show}
                                     setShow={setShow}

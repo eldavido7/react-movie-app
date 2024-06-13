@@ -10,7 +10,6 @@ const Trending = () => {
     const { data, loading } = useFetch(`/trending/all/${endpoint}`);
 
     const onTabChange = (tab) => {
-        // setEndpoint(tab === "Day" ? "day" : tab==="Week" ? "week" : "month")
         if (tab === "Day") { setEndpoint("day") }
         else if (tab === "Week") { setEndpoint("week") }
         else{setEndpoint("day")}
@@ -21,7 +20,7 @@ const Trending = () => {
               <span className="carouselTitle">
                    Trending Movies & TV Shows
               </span>
-              <SwitchTab data={["Day", "Week","Month"]} onTabChange={onTabChange} />
+              <SwitchTab data={["Day", "Week"]} onTabChange={onTabChange} />
           </ContentWrapper>
           <Carousel data={data?.results} loading={loading} />
     </div>
